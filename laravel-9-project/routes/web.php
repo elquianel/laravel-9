@@ -1,18 +1,13 @@
 <?php
 
+use App\Http\Controllers\SiteController;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+// para chamar um controller, primeiro passa o controller e referencia como classe
+// depois você diz qual metodo daquela classe referenciada vc quer usar
+Route::get('/', [SiteController::class, 'index']);
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/sair', [SiteController::class, 'out']);
+Route::get('/usuarios/{qtd}', [SiteController::class, 'users']);
+
+

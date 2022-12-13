@@ -2,4 +2,4 @@
 
 php artisan key:generate - comando para atualizar a chave de verificação da session
 
-
+php artisan make:controller NomeController - comando para criar um controller
