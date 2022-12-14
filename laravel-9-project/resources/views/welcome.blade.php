@@ -11,7 +11,7 @@
     <p>teste: {!! $html !!}</p>
 
     {{-- para utilizar as condicionais, se for ternaria funciona de boa --}}
-    {{ $first_name == 'Elquiane' ? 'Sim' : 'Não'}}
+    {{-- {{ $first_name == 'Elquiane' ? 'Sim' : 'Não'}} --}}
 
     {{-- já para o if()else... você não consegue passar a condicional assim --}}
     {{-- não é necessario chaves para codigos maiores --}}
@@ -45,5 +45,9 @@
         <p>teste</p>
         <h2>mais um teste</h2>
     </x-teste>
+
+    {{-- api github --}}
+
+    <p>{{$data}}</p>
 </body>
 </html>
