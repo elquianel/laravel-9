@@ -37,7 +37,13 @@
         </h1>
     @endif
 
-
     {{-- os laços de repetição funciona da mesma maneira do @if, nada mudou --}}
+
+    {{-- como entender os componentes do blade como tag html --}}
+    {{-- podemos povoar ele também --}}
+    <x-teste>
+        <p>teste</p>
+        <h2>mais um teste</h2>
+    </x-teste>
 </body>
 </html>

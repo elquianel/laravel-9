@@ -10,4 +10,5 @@ Route::get('/', [SiteController::class, 'index']);
 Route::get('/sair', [SiteController::class, 'out']);
 Route::get('/usuarios/{qtd}', [SiteController::class, 'users']);
 
+Route::get('/include', [SiteController::class, 'index2']);
 
