@@ -1,5 +1,7 @@
 =========== COMANDOS =========== 
 
+composer create-project laravel/laravel example-app - criar projeto em laravel
+
 composer update - pra atualizar os pacotes que foram ignorados no gitignore
 
 copy .env.example .env - para copiar o arquivo .env que sobe só o example no github
@@ -15,3 +17,5 @@ php artisan make:migration nome_migration
 php artisan migrate 
 
 php artisan migrate:fresh
+
+php artisan migrate:rollback - apagar a tabela já existente e apagar coluna especifica (pra isso vc cria uma migration especifica)
